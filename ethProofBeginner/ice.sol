@@ -25,6 +25,7 @@ contract MyToken {
 
 
     // mapping variable here
+    // for each user address, the mapping keeps a balance (positive number)
 
     mapping (address => uint) public balances;
 
@@ -40,7 +41,9 @@ contract MyToken {
     }
 
     // burn function
-    // creates new tokens
+    // removes tokens
+    // burn amount cannot exceed the balance of the address provided
+    // otherwise the transaction will fail
     // first it reduces the total supply by the amount to be created
     // then it reduces the balance of the address provided by the same amount
 
