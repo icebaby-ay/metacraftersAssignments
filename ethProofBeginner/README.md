@@ -1,54 +1,69 @@
-# IceCoin
+# Project Title - ICECOIN TOKEN CONTRACT
 
-A sample token with mint and burn capabilities
+THIS IS A SIMPLE TOKEN CONTRACT WRITTEN IN SOLIDITY
 
 ## Description
 
-written in solidity
-can be deployed to the blockchain
-tested in remix ide
+THE TOKEN CAN BE DEPLOYED USINNG REMIX
+WITHIN THE CONTRACT EACH USER (ADDRESS) HAS A TOKEN BALANCE
+THE BALANCE OF ANY USER CAN BE INCREASED USING THE MINT FUNCTION
+THE BALANCE OF ANY USER CAN BE DECREASED USING THE BURN FUNCTION
+TOKENS CANNOT BE TRANSFERRED
 
-state variables:
+## Getting Started
 
-token name
-token abbreviation
-total supply
-user balances
-
-functions:
-
-mint
-burn
-cannot transfer tokens
-
-## Getting Started#
-
-deploy the contract using remix
-remix provides an interface for interacting with the contract
+CREATE A FILE NAMED ice.sol IN THE REMIX IDE
+COPY AND PASTE THE CODE IN ice.sol INTO THE FILE IN THE REMIX IDE
+COMPILE THE CONTRACT MyToken IN  ice.sol
 
 ### Installing
 
-* check the section above
+* YOU CAN DEPLOY THE CODE TO ANY BLOCKCHAIN
+* YOU CAN ALSO DEPLOY TO THE REMIX VM
+* DEPLOY WITHIN THE REMIX IDE
+* THE REMIX IDE WILL PROVIDE AN INTERFACE FOR INTERACTING WITH THE CONTRACT
 
 ### Executing program
 
-you can call the mint and burn functions with inputs:
+WITHIN THE REMIX IDE AFTER DEPLOYING ARE SIX FUNCTIONS
+HERE IS AN OVERVIEW OF HOW TO USE THOSE FUNCTIONS
 
-_address and _amount
+FUNCTION        INPUTS          OUTPUT / EFFECT
 
-you can call the remaining functions to check user balance or the token name or abbreviation
+balances       ADDRESS         TOKEN BALANCE FOR THE GIVEN ADDRESS
+
+tokenName       NONE            'iceCoin'
+
+tokenAbrrv      NONE            'IC'
+
+totalSupply     NONE           THE TOTAL NUMBER OF ICECOINS IN EXISTENCE 
+                               AT ANY MOMENT
+
+mint         address,amount    NO OUTPUT
+                               CREATES NEW TOKENS INTO THE PROVIDED ADDRESS
+
+burn        address,amount     NO OUTPUT
+                               DESTROYS TOKENS BELONGING TO THE PROVIDED ADDRESS GIVEN THAT IT HAS THEM
+
+
 
 ## Help
 
-issues: anyone can mint or burn anyone else's tokens
+PROBLEMS WITH THE CONTRACT
+
+    IT DOESN'T FIT THE ERC20 TOKEN STANDARD
+    ANYONE CAN CREATE TOKENS
+    ANYONE CAN DESTROY ANYONE ELSE'S TOKENS
+    TOKENS CANNOT BE TRANSFERRED
+
+IF THERE ARE ANY PROBLEMS WITH THE README, I'D LIKE TO KNOW EXACTLY WHAT THEY ARE
 
 ## Authors
-
-METACRAFTERS TEAM
+THIS CODE WAS WRITTEN BY ICEBABY (DISCORD- icebaby_ay)
+USING TUTORIALS FROM:
 METACHRIS
-ICE BABY
-
+THE METACRAFTERS ACADEMY
 
 ## License
 
-This project is licensed under thE MIT License
+This project is licensed under the MIT License
