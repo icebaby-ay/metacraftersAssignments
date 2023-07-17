@@ -4,7 +4,7 @@ THIS IS A SIMPLE TOKEN CONTRACT WRITTEN IN SOLIDITY
 
 ## Description
 
-THE TOKEN CAN BE DEPLOYED USINNG REMIX
+THE TOKEN CAN BE DEPLOYED USING REMIX
 WITHIN THE CONTRACT EACH USER (ADDRESS) HAS A TOKEN BALANCE
 THE BALANCE OF ANY USER CAN BE INCREASED USING THE MINT FUNCTION
 THE BALANCE OF ANY USER CAN BE DECREASED USING THE BURN FUNCTION
@@ -28,22 +28,22 @@ COMPILE THE CONTRACT MyToken IN  ice.sol
 WITHIN THE REMIX IDE AFTER DEPLOYING ARE SIX FUNCTIONS
 HERE IS AN OVERVIEW OF HOW TO USE THOSE FUNCTIONS
 
-FUNCTION        INPUTS          OUTPUT / EFFECT
+    FUNCTION        INPUTS          OUTPUT / EFFECT
 
-balances       ADDRESS         TOKEN BALANCE FOR THE GIVEN ADDRESS
+    balances       ADDRESS         TOKEN BALANCE FOR THE GIVEN ADDRESS
 
-tokenName       NONE            'iceCoin'
+    tokenName       NONE            'iceCoin'
 
-tokenAbrrv      NONE            'IC'
+    tokenAbrrv      NONE            'IC'
 
-totalSupply     NONE           THE TOTAL NUMBER OF ICECOINS IN EXISTENCE 
-                               AT ANY MOMENT
+    totalSupply     NONE           THE TOTAL NUMBER OF ICECOINS IN EXISTENCE 
+                                AT ANY MOMENT
 
-mint         address,amount    NO OUTPUT
-                               CREATES NEW TOKENS INTO THE PROVIDED ADDRESS
+    mint         address,amount    NO OUTPUT
+                                CREATES NEW TOKENS INTO THE PROVIDED ADDRESS
 
-burn        address,amount     NO OUTPUT
-                               DESTROYS TOKENS BELONGING TO THE PROVIDED ADDRESS GIVEN THAT IT HAS THEM
+    burn        address,amount     NO OUTPUT
+                                DESTROYS TOKENS BELONGING TO THE PROVIDED ADDRESS GIVEN THAT IT HAS THEM
 
 
 
