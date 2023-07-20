@@ -15,6 +15,8 @@ pragma solidity 0.8.18;
        to the amount that is supposed to be burned.
 */
 
+
+
 contract MyToken {
 
     // public variables here
@@ -25,15 +27,11 @@ contract MyToken {
 
 
     // mapping variable here
-    // for each user address, the mapping keeps a balance (positive number)
 
     mapping (address => uint) public balances;
 
 
     // mint function
-    // creates new tokens
-    // first it increases the total supply by the amount to be created
-    // then it increases the balance of the address provided by the same amount
 
     function mint ( address _address , uint _amount ) public {
         totalSupply = totalSupply + _amount;
@@ -41,11 +39,6 @@ contract MyToken {
     }
 
     // burn function
-    // removes tokens
-    // burn amount cannot exceed the balance of the address provided
-    // otherwise the transaction will fail
-    // first it reduces the total supply by the amount to be created
-    // then it reduces the balance of the address provided by the same amount
 
     function burn ( address _address , uint _amount ) public {
         require(balances[_address] >= _amount, "you don't have the minimum number of tokens" );
