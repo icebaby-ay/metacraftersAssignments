@@ -15,11 +15,11 @@ contract gamerAuth {
         IdStates[_Id] = true;
     }
 
-    function disableId(uint _Id) public onlyModerator {
+    function disableId(uint _Id) public {
 
         require(msg.sender == moderator, "only the moderator is allowed to perform this action");
 
-        IdStates[_Id] = true;
+        IdStates[_Id] = false;
     }
 
 
