@@ -17,7 +17,7 @@ contract gamerAuth {
 
     function disableId(uint _Id) public onlyModerator {
 
-        require(msg.sender == moderator, 'only the moderator is allowed to perform this action');
+        require(msg.sender == moderator, "only the moderator is allowed to perform this action");
 
         IdStates[_Id] = true;
     }
@@ -34,7 +34,7 @@ contract gamerAuth {
 
 
     constructor() {
-        moderator = msg.sender; // The creator of the contract is set as the moderator
+        moderator = msg.sender; 
     }
 
 
